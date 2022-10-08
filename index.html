@@ -11,7 +11,6 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./assets/css/style.css"/>
-        <script src="./assets/js/script.js"></script>
         <title>SunnySide Weather</title>
     </head>
     <body>
@@ -21,16 +20,27 @@
 
         <main>
             <section class="card">
-                <div class="search">
+                <form class="search">
                     <input type="text" class="search-bar">
-                    <button></button>
-                </div>
+                    <button>Search</button>
+                </form>
+            </section>
+
+            <section id="current-weather">
+                <h3>City</h3>
+                <ul id="city" class="display-box">
+                    <li id="">temp:</li>
+                    <li>wind:</li>
+                    <li>humitity:</li>
+                </ul>
+            </section>
+
+            <section id="forecast-weather">
+                <h3>5-Day Forcast:</h3>
+
             </section>
             
         </main>
-
-        <footer>
-
-        </footer>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>

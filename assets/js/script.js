@@ -25,7 +25,6 @@ function fetchWeather(city) {
         )
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
             const city = {
                 name: data.name, 
                 lat: data.coord.lat,
@@ -112,14 +111,11 @@ function displayCurrent(data) {
 };
 
 function displayForecast(data) {
+
     temp = document.createElement("p");
     temp.textContent = displayForecast;
     
-    // wind = document.createElement("p");
-    // wind.textContent = displayForecast;
-    
     var forcastData = data.list
-    console.log(data.list);
 
     forecastWeather.replaceChildren();
     for (i = 8; i < forcastData.length; i += 7) {
@@ -130,18 +126,35 @@ function displayForecast(data) {
         var dateEl = document.createElement("p");
         dateEl.textContent = "Date: " + date;
         forecastWeather.appendChild(dateEl);
+        dateEl.setAttribute(
+            'style',
+            'text-align: center;'
+        );
 
         var tempEl = document.createElement("p");
         tempEl.textContent = "Temp: " + forcastData[i].main.temp
         forecastWeather.appendChild(tempEl);
+        tempEl.setAttribute(
+            'style',
+            'text-align: center;'
+        );
 
         var windEl = document.createElement("p");
         windEl.textContent = "Wind: " + forcastData[i].wind.speed
         forecastWeather.appendChild(windEl);
+        windEl.setAttribute(
+            'style',
+            'text-align: center;'
+        );
 
         var humidityEl = document.createElement("p");
         humidityEl.textContent = "Humitity: " + forcastData[i].main.humidity
         forecastWeather.appendChild(humidityEl);
+        humidityEl.setAttribute(
+            'style',
+            'text-align: center;'
+        );
+
 
     }
 

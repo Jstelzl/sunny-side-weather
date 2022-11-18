@@ -7,3 +7,6 @@
 
 #### In the browser: 
 ![weatherApp](https://user-images.githubusercontent.com/107056238/202757142-b485e922-3480-4975-9d21-75facf008b9e.png)
+
+
+#### Author: Josiah S. Stelzl

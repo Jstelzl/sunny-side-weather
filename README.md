@@ -1,7 +1,7 @@
 # Sunny Side Weather
 
 ## Description
-#### Sunny Side Weather is a weather application on the browser used to find any city in the world and access the current weather conditions.
+#### Sunny Side Weather is a weather application on the browser used to find any city in the world and access the current weather conditions, as well as the next 5 days.
 
 #### website: https://jstelzl.github.io/sunny-side-weather/
 
